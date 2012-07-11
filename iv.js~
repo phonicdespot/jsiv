@@ -1,6 +1,6 @@
 document.write('<p>IV adder started...</p>')
 
-// arrTrim() removes 0 valued elements from an array.
+// arrTrim() removes 0 values from an array.
 function arrTrim(input)
 {
     var output = new Array()
