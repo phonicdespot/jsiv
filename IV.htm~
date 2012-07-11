@@ -4,7 +4,6 @@
     <title>IV Adding</title>
     <script src="jquery.js"></script>
     <script src="iv.js"></script>
-    <script src="tests.js"></script>
   </head>
   <body>
   </body>

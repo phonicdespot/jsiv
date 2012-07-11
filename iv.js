@@ -1,9 +1,7 @@
-document.write('<p>IV adder started...</p>')
-
 // arrTrim() removes 0 valued elements from an array.
 function arrTrim(input)
 {
-    var output = new Array()
+    var output = []
     for (x in input)
 	{
 	    if ( input[x] != 0 )
@@ -62,30 +60,25 @@ function rowAdd(row)
 		}
     }
 }
-// Combinations test code
-/*
-var row=new Array(0,0,0,0,0,0)
-document.write(row.join() + '</br>')
-document.write('<p>Test loop started...<p>')
-for (k=0; k<50; k++)
-{
-    rowAdd(row)
-    var write = arrTrim(row)
-    document.write(write + '</br>')
-}
-*/
 
-/*
-   var grid = new Array(3);
-   for (i = 0; i < grid.length; i++)
-   grid [i] = new Array(3);
-
-/*
-for (l = 0; l < pattern.length; l++)
+// pattArrange arranges an input array into the
+// pattern specified by a binary pattern array,
+// e.g. 1,2,4 arranged by 1,0,0,1,1 becomes 1,0,0,2,4
+function pattArrange(input, pattern)
 {
-if (pattern[l] == 1)
-{
-patMat[0][l] = 1
+    var y = 0
+    var output = []
+    for (x in pattern)
+	{
+	    if ( pattern[x] == 1 )
+		{
+		    output[x] = input[y]
+		    y++
+		}
+	    else
+		{
+		    output[x] = 0
+		}
+	}
+	return output
 }
-}
-*/
